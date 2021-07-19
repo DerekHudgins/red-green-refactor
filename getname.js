@@ -1,4 +1,4 @@
-export const getName = object => {
-  return object.name;
+export const getName = ({ name }) => {
+  return name;
 };
 
