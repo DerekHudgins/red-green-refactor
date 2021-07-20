@@ -1,11 +1,18 @@
 export const capitalizeAndFilter = (array) => {
+  const upperCaseArry = array.map(str => capitalizeString(str));
+  const filteredArray = filter(upperCaseArry);
+  return filteredArray;
+};
+
+const capitalizeString = (string) => string.toUpperCase();
+
+const filter = (ary) => {
   const newArray = [];
-  for (let index = 0; index < array.length; index++) {
-    const firstCharacter = array[index].charAt(0);
-    if (firstCharacter.toUpperCase() !== 'F'){
-      const word = array[index].toUpperCase();
-      newArray.push(word);
+  ary.map(string => {
+    if(string[0] != 'F') {
+      newArray.push(string);
     }
-  }
+  });  
   return newArray;
 };
+
