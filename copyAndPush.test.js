@@ -1,4 +1,4 @@
-import { copyAndPush } from './copy-and-push';
+import { copyAndPush } from './copyAndPush';
 
 describe('copyAndPush', () => {
   const numbers = [1, 2, 3];
